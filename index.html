@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img class="nav-logo" src="images/logo.svg" alt="Logo" />
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#section-1">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-2">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-3">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-btn btn-show-modal" href="#">Contact</a>
+          </li>
+        </ul>
+        <img
+          src="images/icon-hamburger.svg"
+          alt="Menu"
+          class="icon-nav"
+          id="menu"
+        />
+        <div class="navigation-toggle" id="menuNav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#section-1" class="menu-link">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="#section-2" class="menu-link">Testimonials</a>
+            </li>
+            <li class="menu-item">
+              <a href="#section-3" class="menu-link">Projects</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link btn-show-modal menu-link-button" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-title">
+        <h1>We are creatives</h1>
+        <button class="btn-text btn-scroll-to">
+          <img src="images/icon-arrow-down.svg" alt="Arrow down" />
+        </button>
+      </div>
+    </header>
+    <section class="section section-hidden" id="section-1">
+      <div class="features">
+        <div class="features-feature">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <div class="learn">
+            <a href="#" class="btn-learn">Learn more</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(max-width: 650px)"
+            srcset="images/mobile/image-transform.jpg"
+          />
+          <img
+            src="images/desktop/image-transform.jpg"
+            class="features-img"
+            alt="Egg"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 650px)"
+            srcset="images/mobile/image-stand-out.jpg"
+          />
+          <img
+            src="images/desktop/image-stand-out.jpg"
+            class="features-img"
+            alt="Coupled"
+          />
+        </picture>
+        <div class="features-feature">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#" class="btn-learn learn-more">Learn more</a>
+        </div>
+        <div class="features-feature-end graphic">
+          <picture>
+            <source
+              media="(max-width: 1000px)"
+              srcset="images/mobile/image-graphic-design.jpg" />
+            <img
+              src="images/desktop/image-graphic-design.jpg"
+              class="features-img"
+              alt="Cherry"
+          /></picture>
+          <div class="text">
+            <h4>Graphic design</h4>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="features-feature-end photo">
+          <picture>
+            <source
+              media="(max-width: 1000px)"
+              srcset="images/mobile/image-photography.jpg" />
+            <img
+              src="images/desktop/image-photography.jpg"
+              class="features-img"
+              alt="Orange"
+          /></picture>
+          <div class="text">
+            <h4>Photography</h4>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section2 section-hidden" id="section-2">
+      <div class="section-title section-title-testimonials">
+        <h3 class="section-header">Client testimonials</h3>
+      </div>
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <img
+              src="images/image-emily.jpg"
+              alt="Client photo"
+              class="testimonial-photo"
+            />
+            <div class="testimonial-text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </div>
+            <address class="testimonial-author">
+              <p class="testimonial-name">Emily R.</p>
+              <p class="testimonial-post">Marketing Director</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <img
+              src="images/image-thomas.jpg"
+              alt="Client photo"
+              class="testimonial-photo"
+            />
+            <div class="testimonial-text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </div>
+            <address class="testimonial-author">
+              <p class="testimonial-name">Thomas S.</p>
+              <p class="testimonial-post">Chief Operating Officer</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <img
+              src="images/image-jennie.jpg"
+              alt="Client photo"
+              class="testimonial-photo"
+            />
+            <div class="testimonial-text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </div>
+            <address class="testimonial-author">
+              <p class="testimonial-name">Jennie F.</p>
+              <p class="testimonial-post">Business Owner</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider-btn slider-btn-left">&larr;</button>
+        <button class="slider-btn slider-btn-right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section section-hidden" id="section-3">
+      <div class="section-gallery">
+        <picture>
+          <source
+            media="(max-width: 650px)"
+            srcset="images/mobile/image-gallery-milkbottles.jpg" />
+          <img
+            src="images/desktop/image-gallery-milkbottles.jpg"
+            alt="Milk bottles"
+        /></picture>
+        <picture>
+          <source
+            media="(max-width: 650px)"
+            srcset="images/mobile/image-gallery-orange.jpg" />
+          <img src="images/desktop/image-gallery-orange.jpg" alt="Orange"
+        /></picture>
+        <picture>
+          <source
+            media="(max-width: 650px)"
+            srcset="images/mobile/image-gallery-cone.jpg" />
+          <img src="images/desktop/image-gallery-cone.jpg" alt="Cone"
+        /></picture>
+        <picture>
+          <source
+            media="(max-width: 650px)"
+            srcset="images/mobile/image-gallery-sugar-cubes.jpg" />
+          <img
+            src="images/desktop/image-gallery-sugarcubes.jpg"
+            alt="Sugarcubes"
+        /></picture>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img class="footer-logo" src="images/logo.svg" alt="Logo" />
+      <ul class="footer-nav">
+        <li class="footer-item">
+          <a class="footer-link" href="#section-1">About</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#section-2">Testimonials</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#section-3">Projects</a>
+        </li>
+        <li class="footer-item">
+          <button class="footer-link btn-show-modal">Contact Us</button>
+        </li>
+      </ul>
+      <ul class="footer-contacts">
+        <li class="footer-contact">
+          <a class="footer-link" href=""
+            ><img
+              class="icon"
+              src="images/icon-facebook.svg"
+              alt="Icon Facebook"
+          /></a>
+        </li>
+        <li class="footer-contact">
+          <a class="footer-link" href=""
+            ><img
+              class="icon"
+              src="images/icon-instagram.svg"
+              alt="Icon Instagram"
+          /></a>
+        </li>
+        <li class="footer-contact">
+          <a class="footer-link" href=""
+            ><img class="icon" src="images/icon-twitter.svg" alt="Icon Twitter"
+          /></a>
+        </li>
+        <li class="footer-contact">
+          <a class="footer-link" href=""
+            ><img
+              class="icon"
+              src="images/icon-pinterest.svg"
+              alt="Icon Pinterest"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <div class="modal hidden">
+      <button class="btn-close-modal">&times;</button>
+      <h5 class="modal-header">Contact us</h5>
+      <form class="modal-form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn-send">Send message</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      </div> -->
+  </body>
+</html>
